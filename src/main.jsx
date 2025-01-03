@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { Router } from './Router'
 
+//esto es una muestra para Jimena
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
