@@ -4,7 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { Router } from './Router'
 
-
+//hicimos que la barra sea sticky!!! uhu!
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
