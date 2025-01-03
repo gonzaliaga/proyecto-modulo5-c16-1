@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
+import Logo from "../Images/logo.png";
 
 const pages = [
     { name: "HOME", path: '/'},
@@ -41,28 +42,28 @@ function Navbar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
         <Container maxWidth="xl">
             <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-            <Typography
-                variant="h6"
-                noWrap
-                component={Link}
-                to='/'
-                sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-                }}
-            >
-                LOGO
-            </Typography>
-
+            <Box
+            component={Link}
+            to="/"
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              textDecoration: "none",
+              mr: 2,
+            }}
+          >
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                height: "40px",
+                width: "auto",
+              }}
+            />
+          </Box>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                 <IconButton
                 size="large"

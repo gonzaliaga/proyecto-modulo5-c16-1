@@ -18,8 +18,8 @@ export const CatalogDetail = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
-        padding: '20px', 
+        height: 'auto',
+        paddingBottom: '20px', 
       }}
     >
       <Card sx={{ maxWidth: 500, padding: 5, marginTop: '20px' }}> 
@@ -63,6 +63,7 @@ export const CatalogDetail = () => {
             state={{ animal }}>
               Adopción
             </Button>
+
           </CardContent>
         </CardActionArea>
       </Card>
